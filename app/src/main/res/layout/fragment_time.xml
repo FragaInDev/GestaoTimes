@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtNomeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nome_time" />
+
+    <EditText
+        android:id="@+id/edtFundacaoTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_fundacao_time" />
+
+    <Button
+        android:id="@+id/btnAdicionarTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_adicionar_time" />
+
+    <Button
+        android:id="@+id/btnListarTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_listar_times" />
+
+    <Button
+        android:id="@+id/btnNavegarParaJogadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar Jogadores" />
+
+
+    <ListView
+        android:id="@+id/listViewTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TimesGestão</string>
+
+    <!-- Placeholders e mensagens -->
+    <string name="hint_nome_time">Nome do Time</string>
+    <string name="hint_fundacao_time">Fundação (dd/MM/yyyy)</string>
+    <string name="btn_adicionar_time">Adicionar Time</string>
+    <string name="btn_listar_times">Listar Times</string>
+    <string name="toast_preencher_campos">Preencha todos os campos!</string>
+    <string name="toast_time_adicionado">Time adicionado com sucesso!</string>
+    <string name="toast_erro_adicionar_time">Erro ao adicionar time.</string>
+    <string name="toast_nenhum_time_encontrado">Nenhum time encontrado.</string>
+
+    <!-- Jogador -->
+    <string name="hint_nome_jogador">Nome do Jogador</string>
+    <string name="hint_posicao_jogador">Posição</string>
+    <string name="btn_adicionar_jogador">Adicionar Jogador</string>
+    <string name="btn_listar_jogadores">Listar Jogadores</string>
+    <string name="toast_jogador_adicionado">Jogador adicionado com sucesso!</string>
+    <string name="toast_erro_adicionar_jogador">Erro ao adicionar jogador.</string>
+    <string name="toast_nenhum_jogador_encontrado">Nenhum jogador encontrado.</string>
+    <string name="toast_selecione_time">Selecione um time para continuar.</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtNomeJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nome_jogador" />
+
+    <EditText
+        android:id="@+id/edtPosicaoJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_posicao_jogador" />
+
+    <Spinner
+        android:id="@+id/spinnerTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAdicionarJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_adicionar_jogador" />
+
+    <Button
+        android:id="@+id/btnListarJogadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_listar_jogadores" />
+
+    <Button
+        android:id="@+id/btnNavegarParaTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar Times" />
+
+
+    <ListView
+        android:id="@+id/listViewJogadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
