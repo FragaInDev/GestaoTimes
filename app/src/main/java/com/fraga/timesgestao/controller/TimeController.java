@@ -18,7 +18,6 @@ public class TimeController {
         timeDao = new TimeDao(context);
     }
 
-    // Método para adicionar um time
     public boolean adicionarTime(String nome, String fundacao) {
         try {
             timeDao.open();
@@ -31,7 +30,6 @@ public class TimeController {
         }
     }
 
-    // Método para buscar todos os times
     public List<String> obterTimes() {
         try {
             timeDao.open();
@@ -44,7 +42,7 @@ public class TimeController {
         }
     }
 
-    // Método para atualizar informações de um time
+
     public boolean atualizarTime(int id, String nome, String fundacao) {
         try {
             timeDao.open();
@@ -57,7 +55,7 @@ public class TimeController {
         }
     }
 
-    // Método para deletar um time
+
     public boolean deletarTime(int id) {
         try {
             timeDao.open();

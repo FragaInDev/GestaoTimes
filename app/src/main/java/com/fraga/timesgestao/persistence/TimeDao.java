@@ -32,7 +32,7 @@ public class TimeDao {
         dbHelper.close();
     }
 
-    // Método para inserir um novo time
+
     public long inserirTime(String nome, String fundacao) {
         ContentValues values = new ContentValues();
         values.put("nome", nome);
@@ -41,7 +41,7 @@ public class TimeDao {
         return db.insert("time", null, values);
     }
 
-    // Método para buscar todos os times
+
     public List<String> listarTimes() {
         List<String> listaTimes = new ArrayList<>();
         Cursor cursor = db.query("time", new String[]{"id", "nome", "fundacao"},
@@ -60,7 +60,7 @@ public class TimeDao {
         return listaTimes;
     }
 
-    // Método para atualizar um time existente
+
     public int atualizarTime(int id, String nome, String fundacao) {
         ContentValues values = new ContentValues();
         values.put("nome", nome);
@@ -69,7 +69,7 @@ public class TimeDao {
         return db.update("time", values, "id = ?", new String[]{String.valueOf(id)});
     }
 
-    // Método para deletar um time
+
     public int deletarTime(int id) {
         return db.delete("time", "id = ?", new String[]{String.valueOf(id)});
     }

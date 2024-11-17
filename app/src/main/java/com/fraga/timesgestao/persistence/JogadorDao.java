@@ -32,7 +32,7 @@ public class JogadorDao {
         dbHelper.close();
     }
 
-    // Método para inserir um novo jogador
+
     public long inserirJogador(String nome, String posicao, int idTime) {
         ContentValues values = new ContentValues();
         values.put("nome", nome);
@@ -42,7 +42,6 @@ public class JogadorDao {
         return db.insert("jogador", null, values);
     }
 
-    // Método para buscar todos os jogadores de um time específico
     public List<String> listarJogadoresPorTime(int idTime) {
         List<String> listaJogadores = new ArrayList<>();
         Cursor cursor = db.query("jogador", new String[]{"id", "nome", "posicao"},
@@ -61,7 +60,7 @@ public class JogadorDao {
         return listaJogadores;
     }
 
-    // Método para atualizar um jogador
+
     public int atualizarJogador(int id, String nome, String posicao, int idTime) {
         ContentValues values = new ContentValues();
         values.put("nome", nome);
@@ -71,7 +70,7 @@ public class JogadorDao {
         return db.update("jogador", values, "id = ?", new String[]{String.valueOf(id)});
     }
 
-    // Método para deletar um jogador
+
     public int deletarJogador(int id) {
         return db.delete("jogador", "id = ?", new String[]{String.valueOf(id)});
     }

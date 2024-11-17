@@ -18,7 +18,6 @@ public class JogadorController {
         jogadorDao = new JogadorDao(context);
     }
 
-    // Método para adicionar um jogador
     public boolean adicionarJogador(String nome, String posicao, int idTime) {
         try {
             jogadorDao.open();
@@ -31,7 +30,6 @@ public class JogadorController {
         }
     }
 
-    // Método para buscar jogadores de um time específico
     public List<String> obterJogadoresPorTime(int idTime) {
         try {
             jogadorDao.open();
@@ -44,7 +42,6 @@ public class JogadorController {
         }
     }
 
-    // Método para atualizar informações de um jogador
     public boolean atualizarJogador(int id, String nome, String posicao, int idTime) {
         try {
             jogadorDao.open();
@@ -57,7 +54,6 @@ public class JogadorController {
         }
     }
 
-    // Método para deletar um jogador
     public boolean deletarJogador(int id) {
         try {
             jogadorDao.open();
